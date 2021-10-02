@@ -1,0 +1,14 @@
+body { background-color: antiquewhite;
+
+
+
+}
+p{ color: navy;
+
+
+}
+table,th,td{
+    border : 1px solid black;
+    background-color: wheat;
+
+}
