@@ -1,0 +1,48 @@
+<html>
+<head>
+<script>
+function validateform()
+{
+
+  var fname=decument.getElementById("fname").value;
+  var Un=decument.getElementById("Uname").value;
+  var pas=decument.getElementById("pas").value;
+  var Cpas=decument.getElementById("Cpas").value;
+var r=true;
+var regEx= /[A-Z a-z]+$/
+if (fn.match(regEx))
+{
+
+}
+else
+r=false;
+}
+<style>
+
+  #e1,#e2,#e3,#e4 color:red;
+  </style>
+</script>
+
+</head>
+<body>
+   <h1> SIGN UP</h1> 
+<form onsubmit="return validateform();">
+<label for="fname"> Full name:</label> <br>
+ <input type="text" id="fname" name="fn"> <span id="e1"></span><br>
+
+ <label for="Uname"> User name:</label> <br>
+  <input type="text" id="Uname" name="Un"><span id="e2"></span><br>
+
+  <label for="pas"> password:</label> <br>
+    <input type="password" id="pas"name="pas"><span id="e3"></span><br>
+
+      <label for="Cpas"> Confrim password:</label> <br>
+      <input type="password" id="Cpas" name="Cpas"><span id="e4"></span><br><br>
+
+      <input type="submit" value="SIGN UP">
+
+
+          
+</form>
+</body>
+</html>

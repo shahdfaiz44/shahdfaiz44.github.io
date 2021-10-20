@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title> Greeting</title> 
+        <meta charset="utf-8">
+      </head>
+
+<body>
+
+<p id="demo"></p>
+
+
+
+<script>
+var name;
+name= parseInt(prompt("Enter your name:"));
+const hour = new Date().getHours();
+
+let greeting;
+
+if (hour < 12) {
+
+  greeting = "Good morning";
+
+} 
+ else if (hour >= 12) {
+
+  greeting = "Good Afternoon";
+
+}
+
+document.getElementById("demo").innerHTML = greeting;
+decument.write("The name" + name);
+
+</script>
+
+
+
+</body>
+
+</html>
+
