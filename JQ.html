@@ -7,11 +7,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
 $(document).ready(function() {
-$("button").click(function (){
-$("body").toggleClass(light);
-
+  $('button').click(function () {
+    $('body').toggleClass('dark');
+    if( $('body').hasClass('dark')) {
+        $('button').html('dark');
+    }
+    else {
+        $('button').html('light');
+    }
 });
-
 });
 
 
@@ -23,12 +27,15 @@ body{
     color: black;
   }
   
-  body{
+  .dark{
     background-color: black;
     color: white;
   }
   
-  
+  .light{
+    background-color:white;
+    color:black;
+  }
   
   
   </style>
